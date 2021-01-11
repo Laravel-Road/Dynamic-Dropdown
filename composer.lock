@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "63b75e9b0a8bc73e8b00036bd753b7d8",
+    "content-hash": "3976df82ed14627ed6c9a96d063d0ca8",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1126,6 +1126,59 @@
                 }
             ],
             "time": "2020-06-13T08:05:20+00:00"
+        },
+        {
+            "name": "laravel-road/ibge-locations",
+            "version": "v0.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Laravel-Road/IBGE-Locations.git",
+                "reference": "eb187bb6a44fdacbcd9bbbe8e4a09d4baf775f06"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Laravel-Road/IBGE-Locations/zipball/eb187bb6a44fdacbcd9bbbe8e4a09d4baf775f06",
+                "reference": "eb187bb6a44fdacbcd9bbbe8e4a09d4baf775f06",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/guzzle": "^7.2",
+                "illuminate/http": "^8.21",
+                "illuminate/support": "^8.0"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^6.7",
+                "phpunit/phpunit": "^9.5"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "LaravelRoad\\IBGELocaltions\\Providers\\LocationsServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "LaravelRoad\\IBGELocaltions\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Pedro Augusto",
+                    "email": "pams.pedro@gmail.com"
+                }
+            ],
+            "description": "Laravel client to consume IBGE Locations api",
+            "support": {
+                "issues": "https://github.com/Laravel-Road/IBGE-Locations/issues",
+                "source": "https://github.com/Laravel-Road/IBGE-Locations/tree/v0.0.3"
+            },
+            "time": "2021-01-11T05:42:40+00:00"
         },
         {
             "name": "laravel/fortify",
