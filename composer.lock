@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "591ba11ebb05c7a150ee17f31ecfdb0d",
+    "content-hash": "9290d41601607da06e1014182fac4e11",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1129,16 +1129,16 @@
         },
         {
             "name": "laravel-road/ibge-locations",
-            "version": "v0.0.6",
+            "version": "v0.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Laravel-Road/IBGE-Locations.git",
-                "reference": "77890cfdd1e31cba6ffd70f21ec1563117bb8891"
+                "reference": "5c1111fc37d4f41adb27f5e8015253592f0e2b63"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Laravel-Road/IBGE-Locations/zipball/77890cfdd1e31cba6ffd70f21ec1563117bb8891",
-                "reference": "77890cfdd1e31cba6ffd70f21ec1563117bb8891",
+                "url": "https://api.github.com/repos/Laravel-Road/IBGE-Locations/zipball/5c1111fc37d4f41adb27f5e8015253592f0e2b63",
+                "reference": "5c1111fc37d4f41adb27f5e8015253592f0e2b63",
                 "shasum": ""
             },
             "require": {
@@ -1179,9 +1179,9 @@
             "description": "Laravel client to consume IBGE Locations api",
             "support": {
                 "issues": "https://github.com/Laravel-Road/IBGE-Locations/issues",
-                "source": "https://github.com/Laravel-Road/IBGE-Locations/tree/v0.0.6"
+                "source": "https://github.com/Laravel-Road/IBGE-Locations/tree/v0.1.1"
             },
-            "time": "2021-01-11T14:29:22+00:00"
+            "time": "2021-01-11T20:51:59+00:00"
         },
         {
             "name": "laravel/fortify",
