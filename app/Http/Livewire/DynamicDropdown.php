@@ -2,7 +2,7 @@
 
 namespace App\Http\Livewire;
 
-use App\Facades\Locations;
+use LaravelRoad\IBGELocaltions\Facades\Locations;
 use Livewire\Component;
 
 class DynamicDropdown extends Component
