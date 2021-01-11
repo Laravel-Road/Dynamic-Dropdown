@@ -14,7 +14,7 @@
         <select id="cidade" name="cidade" class="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-200 focus>outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm rounded-md">
             <option value="" selected>{{ __('Selecione uma cidade...') }}</option>
             @if($this->estado)
-                @foreach($municipios as $municipio)
+                @foreach($this->municipios as $municipio)
                     <option value="{{ $municipio->id }}">{{ $municipio->nome }}</option>
                 @endforeach
             @endif
