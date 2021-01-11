@@ -19,11 +19,7 @@ class LocationsService
     public function getStates()
     {
         if (! Cache::has( 'states')) {
-            Cache::put('states', State::collection(
-                $this->client
-                    ->get('/estados', ['orderBy' => 'nome'])
-                    ->object()
-            ), 3600);
+            Cache::put('states', State::collection($this->fetchStates()->object()), 3600);
         }
 
         return Cache::get('states');
@@ -32,13 +28,19 @@ class LocationsService
     public function getCities(string $state)
     {
         if (! Cache::has( $state . '_cities')) {
-            Cache::put($state . '_cities', City::collection(
-                $this->client
-                    ->get("/estados/{$state}/municipios")
-                    ->object()
-            ), 3600);
+            Cache::put($state . '_cities', City::collection($this->fetchCities($state)->object()), 3600);
         }
 
         return Cache::get($state . '_cities');
+    }
+
+    private function fetchStates()
+    {
+        return $this->client->get('/estados', ['orderBy' => 'nome']);
+    }
+
+    private function fetchCities(string $state)
+    {
+        return $this->client->get("/estados/{$state}/municipios");
     }
 }
