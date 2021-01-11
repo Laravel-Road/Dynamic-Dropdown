@@ -15,7 +15,7 @@
             <option value="" selected>{{ __('Selecione uma cidade...') }}</option>
             @if($this->state)
                 @foreach($this->cities as $city)
-                    <option value="{{ $city->id }}">{{ $city->name }}</option>
+                    <option value="{{ $city->code }}">{{ $city->name }}</option>
                 @endforeach
             @endif
         </select>
